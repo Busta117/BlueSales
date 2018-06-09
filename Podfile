@@ -8,9 +8,10 @@ target 'BlueSales' do
 
   pod 'SVProgressHUD'
   pod 'DateToolsSwift'
-  pod 'RealmSwift'
   pod 'Alamofire'
   pod 'RxSwift'
+  pod 'ObjectMapper'
+  pod 'AlamofireObjectMapper'
 
   target 'BlueSalesTests' do
     inherit! :search_paths
