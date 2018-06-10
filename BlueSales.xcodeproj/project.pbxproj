@@ -22,6 +22,14 @@
 		7FA089A520CC8CC600AA0093 /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA0899720CC6C7600AA0093 /* Page.swift */; };
 		7FA089A620CC8CC900AA0093 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA0899520CC617200AA0093 /* Product.swift */; };
 		7FA089A720CD8DF500AA0093 /* ProductDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA089A120CC8B3400AA0093 /* ProductDetail.swift */; };
+		7FA089AA20CD8EA100AA0093 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA089A920CD8EA100AA0093 /* AppCoordinator.swift */; };
+		7FA089AC20CD8F1C00AA0093 /* Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA089AB20CD8F1C00AA0093 /* Navigation.swift */; };
+		7FA089AF20CD901100AA0093 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA089AE20CD901100AA0093 /* BaseViewController.swift */; };
+		7FA089B120CD90C500AA0093 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA089B020CD90C500AA0093 /* UIColor.swift */; };
+		7FA089B320CD924800AA0093 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA089B220CD924800AA0093 /* NotificationManager.swift */; };
+		7FA089B520CD936100AA0093 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA089B420CD936100AA0093 /* UIImage.swift */; };
+		7FA089B720CD93B000AA0093 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA089B620CD93B000AA0093 /* UIView.swift */; };
+		7FA089B920CD946200AA0093 /* UIBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA089B820CD946200AA0093 /* UIBarButtonItem.swift */; };
 		8A5058D7CB5B2B899F01AA9F /* Pods_BlueSalesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4688099BD38FDD5514DF208A /* Pods_BlueSalesTests.framework */; };
 		BB4FEE641DB24B6688487F1F /* Pods_BlueSalesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E0EFB2E1F99AF7AB4522309 /* Pods_BlueSalesUITests.framework */; };
 /* End PBXBuildFile section */
@@ -68,6 +76,14 @@
 		7FA0899920CC723F00AA0093 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		7FA089A120CC8B3400AA0093 /* ProductDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetail.swift; sourceTree = "<group>"; };
 		7FA089A320CC8C3800AA0093 /* ProductTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTests.swift; sourceTree = "<group>"; };
+		7FA089A920CD8EA100AA0093 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		7FA089AB20CD8F1C00AA0093 /* Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigation.swift; sourceTree = "<group>"; };
+		7FA089AE20CD901100AA0093 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		7FA089B020CD90C500AA0093 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		7FA089B220CD924800AA0093 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		7FA089B420CD936100AA0093 /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
+		7FA089B620CD93B000AA0093 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		7FA089B820CD946200AA0093 /* UIBarButtonItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIBarButtonItem.swift; sourceTree = "<group>"; };
 		93E6F2769868DFAE0E04AC72 /* Pods-BlueSalesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlueSalesTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BlueSalesTests/Pods-BlueSalesTests.release.xcconfig"; sourceTree = "<group>"; };
 		9A07451A5DB2695EA618A9B6 /* Pods-BlueSales.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlueSales.release.xcconfig"; path = "Pods/Target Support Files/Pods-BlueSales/Pods-BlueSales.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -178,7 +194,7 @@
 		7FA0898D20CC60F800AA0093 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				7FA0899220CC60F800AA0093 /* Categories */,
+				7FA0899220CC60F800AA0093 /* Extension */,
 				7FA0898F20CC60F800AA0093 /* Coordinator */,
 				7FA0898E20CC60F800AA0093 /* ViewModel */,
 				7FA0899020CC60F800AA0093 /* Model */,
@@ -197,6 +213,9 @@
 		7FA0898F20CC60F800AA0093 /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
+				7FA089A920CD8EA100AA0093 /* AppCoordinator.swift */,
+				7FA089AB20CD8F1C00AA0093 /* Navigation.swift */,
+				7FA089B220CD924800AA0093 /* NotificationManager.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -214,16 +233,29 @@
 		7FA0899120CC60F800AA0093 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				7FA089AD20CD900400AA0093 /* Base */,
 				7FA0899920CC723F00AA0093 /* SearchViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
 		};
-		7FA0899220CC60F800AA0093 /* Categories */ = {
+		7FA0899220CC60F800AA0093 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				7FA089B020CD90C500AA0093 /* UIColor.swift */,
+				7FA089B420CD936100AA0093 /* UIImage.swift */,
+				7FA089B620CD93B000AA0093 /* UIView.swift */,
+				7FA089B820CD946200AA0093 /* UIBarButtonItem.swift */,
 			);
-			path = Categories;
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		7FA089AD20CD900400AA0093 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				7FA089AE20CD901100AA0093 /* BaseViewController.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 		CD1EAA58DA68B4B0F8ED4335 /* Frameworks */ = {
@@ -460,9 +492,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FA089AA20CD8EA100AA0093 /* AppCoordinator.swift in Sources */,
+				7FA089B520CD936100AA0093 /* UIImage.swift in Sources */,
 				7FA0895D20CC50F000AA0093 /* AppDelegate.swift in Sources */,
+				7FA089B320CD924800AA0093 /* NotificationManager.swift in Sources */,
+				7FA089B720CD93B000AA0093 /* UIView.swift in Sources */,
+				7FA089AC20CD8F1C00AA0093 /* Navigation.swift in Sources */,
+				7FA089B920CD946200AA0093 /* UIBarButtonItem.swift in Sources */,
 				7FA089A220CC8B3400AA0093 /* ProductDetail.swift in Sources */,
+				7FA089B120CD90C500AA0093 /* UIColor.swift in Sources */,
 				7FA0899620CC617200AA0093 /* Product.swift in Sources */,
+				7FA089AF20CD901100AA0093 /* BaseViewController.swift in Sources */,
 				7FA0899A20CC723F00AA0093 /* SearchViewController.swift in Sources */,
 				7FA0899820CC6C7600AA0093 /* Page.swift in Sources */,
 			);
