@@ -66,7 +66,9 @@ class Product: Mappable, PageMapContext {
         let url = "https://bdk0sta2n0.execute-api.eu-west-1.amazonaws.com/ios-assignment/search"
         let params: [String: Any] = ["query": query, "page": currentPage + 1]
         
-        Alamofire.request(url, parameters: params).validate().responseObject(context: Product()) { (response: DataResponse<Page<Product>>) in
+        Alamofire.request(url, parameters: params)
+            .validate()
+            .responseObject(context: Product()) { (response: DataResponse<Page<Product>>) in
             if let page = response.value {
                 complete(page, nil)
             } else {
@@ -76,6 +78,10 @@ class Product: Mappable, PageMapContext {
         
     }
     
+    
+    func detail(complete: @escaping (ProductDetail?, Error?)->()) {
+        ProductDetail.forProduct(self, complete: complete)
+    }
     
     
 }

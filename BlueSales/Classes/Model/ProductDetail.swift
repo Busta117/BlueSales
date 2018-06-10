@@ -38,9 +38,9 @@ class ProductReviewInformation: Mappable {
     required init?(map: Map){ }
     
     func mapping(map: Map) {
-        reviewAverage <- map["reviewSummary.reviewAverage"]
-        reviewCount <- map["reviewSummary.reviewCount"]
-        reviews <- map["reviews"]
+        reviewAverage    <- map["reviewSummary.reviewAverage"]
+        reviewCount     <- map["reviewSummary.reviewCount"]
+        reviews         <- map["reviews"]
     }
 }
 
@@ -106,4 +106,20 @@ class ProductDetail: Mappable {
         nextDayDelivery         <- map["nextDayDelivery"]
         recommendedAccessories  <- map["recommendedAccessories"]
     }
+    
+    class func forProduct(_ product: Product, complete: @escaping (ProductDetail?, Error?)->()) {
+        
+        let url = "https://bdk0sta2n0.execute-api.eu-west-1.amazonaws.com/ios-assignment/product/\(product.id)"
+        
+        Alamofire.request(url)
+            .validate()
+            .responseObject{ (response: DataResponse<ProductDetail>) in
+            if let detail = response.value {
+                complete(detail, nil)
+            } else {
+                complete(nil, response.error)
+            }
+        }
+    }
+    
 }

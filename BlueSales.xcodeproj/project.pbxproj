@@ -21,6 +21,7 @@
 		7FA089A420CC8C3800AA0093 /* ProductTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA089A320CC8C3800AA0093 /* ProductTests.swift */; };
 		7FA089A520CC8CC600AA0093 /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA0899720CC6C7600AA0093 /* Page.swift */; };
 		7FA089A620CC8CC900AA0093 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA0899520CC617200AA0093 /* Product.swift */; };
+		7FA089A720CD8DF500AA0093 /* ProductDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA089A120CC8B3400AA0093 /* ProductDetail.swift */; };
 		8A5058D7CB5B2B899F01AA9F /* Pods_BlueSalesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4688099BD38FDD5514DF208A /* Pods_BlueSalesTests.framework */; };
 		BB4FEE641DB24B6688487F1F /* Pods_BlueSalesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E0EFB2E1F99AF7AB4522309 /* Pods_BlueSalesUITests.framework */; };
 /* End PBXBuildFile section */
@@ -472,6 +473,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7FA0897220CC50F400AA0093 /* BlueSalesTests.swift in Sources */,
+				7FA089A720CD8DF500AA0093 /* ProductDetail.swift in Sources */,
 				7FA089A620CC8CC900AA0093 /* Product.swift in Sources */,
 				7FA089A420CC8C3800AA0093 /* ProductTests.swift in Sources */,
 				7FA089A520CC8CC600AA0093 /* Page.swift in Sources */,
