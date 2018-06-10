@@ -14,4 +14,13 @@ struct LaunchScreen {
     }
 }
 
+extension SearchViewController {
+    class func launch(viewModel: SearchViewModel = SearchViewModel()) -> SearchViewController {
+        let vc = UIStoryboard(name: "Search", bundle: nil).instantiateViewController(withIdentifier: "SearchViewController") as! SearchViewController
+        vc.viewModel = viewModel
+        return vc
+    }
+}
+
+
 

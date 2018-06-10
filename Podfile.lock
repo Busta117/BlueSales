@@ -1,5 +1,7 @@
 PODS:
   - Alamofire (4.7.2)
+  - AlamofireImage (3.3.1):
+    - Alamofire (~> 4.5)
   - AlamofireObjectMapper (5.0.0):
     - Alamofire (~> 4.1)
     - ObjectMapper (~> 3.0)
@@ -10,6 +12,7 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire
+  - AlamofireImage
   - AlamofireObjectMapper
   - DateToolsSwift
   - ObjectMapper
@@ -19,6 +22,7 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
+    - AlamofireImage
     - AlamofireObjectMapper
     - DateToolsSwift
     - ObjectMapper
@@ -27,12 +31,13 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
+  AlamofireImage: 3b35b586853abaf94ca1250f4e94cff3c21a4c0d
   AlamofireObjectMapper: 5fafc816351cbbc0d486611aaeba7461c0cbad49
   DateToolsSwift: 875d97ff9e3a5d54abdd67a269b3f51c757b71ab
   ObjectMapper: 5cccd2de6f253eda859df8116a5a554d9769e859
   RxSwift: e49536837d9901277638493ea537394d4b55f570
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
 
-PODFILE CHECKSUM: d1f0c17965b14178acfa0900602d5ebb852fe14a
+PODFILE CHECKSUM: 2d39cdf19fb63fab816abbc313f1411b8a7f884e
 
 COCOAPODS: 1.5.3

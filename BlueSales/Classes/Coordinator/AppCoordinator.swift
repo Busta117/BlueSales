@@ -45,7 +45,7 @@ class AppCoordinator {
         self.window = window
         
         if navigationController == nil {
-            let navigation = UINavigationController(rootViewController: LaunchScreen())
+            let navigation = UINavigationController(rootViewController: SearchViewController.launch())
             navigation.isNavigationBarHidden = false
             self.window?.rootViewController = navigation
             navigationController = navigation

@@ -12,6 +12,7 @@ target 'BlueSales' do
   pod 'RxSwift'
   pod 'ObjectMapper'
   pod 'AlamofireObjectMapper'
+  pod 'AlamofireImage'
 
   target 'BlueSalesTests' do
     inherit! :search_paths
