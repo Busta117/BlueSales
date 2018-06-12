@@ -42,7 +42,7 @@ import RxSwift
     func setupBackButton() {
         
         let count: Int? = navigationController?.viewControllers.count
-        if let count = count, count > 0 && navigationItem.leftBarButtonItem == nil{
+        if let count = count, count > 0 && navigationItem.leftBarButtonItem == nil {
             if  !(navigationController?.viewControllers.first === self) {
                 let color = navigationTitleColor
                 self.navigationItem.leftBarButtonItem = UIBarButtonItem(withImage: #imageLiteral(resourceName: "back-icn"), color: color, target: self, action: #selector(self.superBackAction(_:)))

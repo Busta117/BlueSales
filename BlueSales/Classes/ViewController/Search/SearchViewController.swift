@@ -24,6 +24,7 @@ class SearchViewController: BaseViewController {
         registerNotifications()
         registerCell()
         
+        tableView.accessibilityIdentifier = "tableView"
         tableView.isHidden = true
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 40
@@ -114,6 +115,14 @@ extension SearchViewController: UITableViewDelegate, UITableViewDataSource {
         
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let product = viewModel.products.value[indexPath.row]
+        
+        navigationController?.pushViewController(ProductDetailViewController.launch(product: product), animated: true)
+        
     }
     
 }

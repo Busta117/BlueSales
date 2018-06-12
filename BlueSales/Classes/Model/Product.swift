@@ -42,7 +42,7 @@ class Product: Mappable, PageMapContext {
         return "products"
     }
     
-    required convenience init?(map: Map) {self.init()}
+    convenience required init?(map: Map) {self.init()}
     
     func mapping(map: Map) {
         id                                  <- map["productId"]

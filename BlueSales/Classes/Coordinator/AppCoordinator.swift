@@ -13,8 +13,6 @@ class AppCoordinator {
     static let shared = AppCoordinator()
     weak var navigationController: UINavigationController?
     
-    fileprivate weak var window: UIWindow?
-    
     var firstResponderViewController: UIViewController? {
         
         var viewCon: UIViewController?
@@ -42,12 +40,11 @@ class AppCoordinator {
     
     
     func start(window: UIWindow?) {
-        self.window = window
         
         if navigationController == nil {
             let navigation = UINavigationController(rootViewController: SearchViewController.launch())
             navigation.isNavigationBarHidden = false
-            self.window?.rootViewController = navigation
+            window?.rootViewController = navigation
             navigationController = navigation
         }
         

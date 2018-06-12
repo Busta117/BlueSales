@@ -7,63 +7,8 @@
 //
 
 import XCTest
-import AlamofireObjectMapper
-import ObjectMapper
 
 @testable import BlueSales
-
-extension Product {
-    class func mockedSearch() -> Page<Product>? {
-        
-        let jsonText = """
-{
-    
-    "products": [
-        {
-            "productId": 785359,
-            "productName": "Apple iPhone 6 32GB Grijs",
-            "reviewInformation": {
-                "reviews": [],
-                "reviewSummary": {
-                    "reviewAverage": 9.1,
-                    "reviewCount": 952
-                }
-            },
-            "USPs": [
-                "32 GB opslagcapaciteit",
-                "4,7 inch Retina HD scherm",
-                "iOS 11"
-            ],
-            "availabilityState": 2,
-            "salesPriceIncVat": 369,
-            "productImage": "https://image.coolblue.nl/300x750/products/818870",
-            "coolbluesChoiceInformationTitle": "middenklasse iPhone",
-            "promoIcon": {
-                "text": "middenklasse iPhone",
-                "type": "coolblues-choice"
-            },
-            "nextDayDelivery": true
-        }
-    ],
-    "currentPage": 1,
-    "pageSize": 24,
-    "totalResults": 70,
-    "pageCount": 3
-
-}
-"""
-        if let data = jsonText.data(using: .utf8) {
-            do {
-                let JSONObject = try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any]
-                let parsedObject = Mapper<Page<Product>>(context: Product(), shouldIncludeNilValues: false).map(JSONObject: JSONObject)
-                return parsedObject
-            } catch {
-                return nil
-            }
-        }
-        return nil
-    }
-}
 
 class ProductTests: XCTestCase {
     
@@ -75,6 +20,13 @@ class ProductTests: XCTestCase {
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
+    }
+    
+    func testProductIsMapeable() {
+        
+        let product = Product()
+        XCTAssertEqual(product.mappingResultsKeypath(), "products")
+        
     }
     
     func testSearchProduct() {
@@ -90,11 +42,43 @@ class ProductTests: XCTestCase {
         
     }
     
-    func testProductMapeable() {
-        
-        let product = Product()
-        XCTAssertEqual(product.mappingResultsKeypath(), "products")
+    
+    func testProductSuccessfullyMapped() {
+        if let page = Product.mockedSearch() {
+            if let product = page.results.first {
+                
+                XCTAssertEqual(product.name, "Apple iPhone 6 32GB Grijs") // checking string mapping
+                XCTAssertEqual(product.reviewAverage, 9.1) //checking nested mapping and number
+                XCTAssertEqual(product.USPs.count, 3) // checking string's array mapping
+                
+            } else {
+                XCTFail("json is wrong mapped")
+            }
+            
+        } else {
+            XCTFail("json couldn't be mapped")
+        }
     }
+    
+    
+    func testWrongJsonResponse() {
+        
+        if let page = Product.mockedFailSearch() {
+            if let product = page.results.first {
+                
+                XCTAssertFalse(product.name == "Apple iPhone 6 32GB Grijs") // checking string mapping
+                XCTAssertFalse(product.reviewAverage == 9.1) //checking nested mapping and number
+                XCTAssertFalse(product.USPs.count == 3) // checking string's array mapping
+                
+            } else {
+                XCTFail("json is wrong mapped")
+            }
+            
+        } else {
+            XCTFail("json couldn't be mapped")
+        }
+    }
+    
     
     
 }

@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		65F6C01BD312C339E9C80D00 /* Pods_BlueSales.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2181C5F7E086466871CBE027 /* Pods_BlueSales.framework */; };
+		7F2C91E620CEFAF300F31CDE /* ProductDetailTitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2C91E520CEFAF300F31CDE /* ProductDetailTitleTableViewCell.swift */; };
+		7F2C91E820CF1E1D00F31CDE /* ProductDetailInformationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2C91E720CF1E1D00F31CDE /* ProductDetailInformationTableViewCell.swift */; };
+		7F2C91EA20CF301700F31CDE /* ProductDetailTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2C91E920CF301700F31CDE /* ProductDetailTests.swift */; };
+		7F2C91EC20CF40A200F31CDE /* ProductMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2C91EB20CF40A200F31CDE /* ProductMock.swift */; };
+		7F2C91EE20CF47C500F31CDE /* ProductDetailMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2C91ED20CF47C500F31CDE /* ProductDetailMock.swift */; };
 		7FA0895D20CC50F000AA0093 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA0895C20CC50F000AA0093 /* AppDelegate.swift */; };
 		7FA0896420CC50F400AA0093 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FA0896320CC50F400AA0093 /* Assets.xcassets */; };
-		7FA0897220CC50F400AA0093 /* BlueSalesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA0897120CC50F400AA0093 /* BlueSalesTests.swift */; };
 		7FA0897D20CC50F400AA0093 /* BlueSalesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA0897C20CC50F400AA0093 /* BlueSalesUITests.swift */; };
 		7FA0899320CC60F800AA0093 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FA0898B20CC60F800AA0093 /* LaunchScreen.storyboard */; };
-		7FA0899420CC60F800AA0093 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FA0898C20CC60F800AA0093 /* Main.storyboard */; };
 		7FA0899620CC617200AA0093 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA0899520CC617200AA0093 /* Product.swift */; };
 		7FA0899820CC6C7600AA0093 /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA0899720CC6C7600AA0093 /* Page.swift */; };
 		7FA089A220CC8B3400AA0093 /* ProductDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA089A120CC8B3400AA0093 /* ProductDetail.swift */; };
@@ -68,18 +71,21 @@
 		429B2A6E9CD30C19981E3CA6 /* Pods-BlueSales.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlueSales.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BlueSales/Pods-BlueSales.debug.xcconfig"; sourceTree = "<group>"; };
 		4688099BD38FDD5514DF208A /* Pods_BlueSalesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlueSalesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7045B3A10953FB8E407B320D /* Pods-BlueSalesUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlueSalesUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BlueSalesUITests/Pods-BlueSalesUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7F2C91E520CEFAF300F31CDE /* ProductDetailTitleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailTitleTableViewCell.swift; sourceTree = "<group>"; };
+		7F2C91E720CF1E1D00F31CDE /* ProductDetailInformationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailInformationTableViewCell.swift; sourceTree = "<group>"; };
+		7F2C91E920CF301700F31CDE /* ProductDetailTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailTests.swift; sourceTree = "<group>"; };
+		7F2C91EB20CF40A200F31CDE /* ProductMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductMock.swift; sourceTree = "<group>"; };
+		7F2C91ED20CF47C500F31CDE /* ProductDetailMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailMock.swift; sourceTree = "<group>"; };
 		7FA0895920CC50F000AA0093 /* BlueSales.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlueSales.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FA0895C20CC50F000AA0093 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7FA0896320CC50F400AA0093 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7FA0896820CC50F400AA0093 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7FA0896D20CC50F400AA0093 /* BlueSalesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlueSalesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7FA0897120CC50F400AA0093 /* BlueSalesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueSalesTests.swift; sourceTree = "<group>"; };
 		7FA0897320CC50F400AA0093 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7FA0897820CC50F400AA0093 /* BlueSalesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlueSalesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FA0897C20CC50F400AA0093 /* BlueSalesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueSalesUITests.swift; sourceTree = "<group>"; };
 		7FA0897E20CC50F400AA0093 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7FA0898B20CC60F800AA0093 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
-		7FA0898C20CC60F800AA0093 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		7FA0899520CC617200AA0093 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		7FA0899720CC6C7600AA0093 /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
 		7FA089A120CC8B3400AA0093 /* ProductDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetail.swift; sourceTree = "<group>"; };
@@ -184,9 +190,11 @@
 		7FA0897020CC50F400AA0093 /* BlueSalesTests */ = {
 			isa = PBXGroup;
 			children = (
-				7FA0897120CC50F400AA0093 /* BlueSalesTests.swift */,
 				7FA0897320CC50F400AA0093 /* Info.plist */,
+				7F2C91EB20CF40A200F31CDE /* ProductMock.swift */,
 				7FA089A320CC8C3800AA0093 /* ProductTests.swift */,
+				7F2C91ED20CF47C500F31CDE /* ProductDetailMock.swift */,
+				7F2C91E920CF301700F31CDE /* ProductDetailTests.swift */,
 			);
 			path = BlueSalesTests;
 			sourceTree = "<group>";
@@ -204,7 +212,6 @@
 			isa = PBXGroup;
 			children = (
 				7FA0898B20CC60F800AA0093 /* LaunchScreen.storyboard */,
-				7FA0898C20CC60F800AA0093 /* Main.storyboard */,
 				7FA089C620CD980D00AA0093 /* Search.storyboard */,
 				7FA089C820CD981600AA0093 /* Product.storyboard */,
 			);
@@ -287,6 +294,8 @@
 			isa = PBXGroup;
 			children = (
 				7FA089C220CD97EE00AA0093 /* ProductDetailViewController.swift */,
+				7F2C91E520CEFAF300F31CDE /* ProductDetailTitleTableViewCell.swift */,
+				7F2C91E720CF1E1D00F31CDE /* ProductDetailInformationTableViewCell.swift */,
 			);
 			path = Product;
 			sourceTree = "<group>";
@@ -435,7 +444,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7FA0899420CC60F800AA0093 /* Main.storyboard in Resources */,
 				7FA089CF20CDA66400AA0093 /* SearchProductTableViewCell.xib in Resources */,
 				7FA089C920CD981600AA0093 /* Product.storyboard in Resources */,
 				7FA0896420CC50F400AA0093 /* Assets.xcassets in Resources */,
@@ -489,20 +497,20 @@
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
-				"${BUILT_PRODUCTS_DIR}/DateToolsSwift/DateToolsSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyMarkdown/SwiftyMarkdown.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DateToolsSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyMarkdown.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -557,10 +565,12 @@
 				7FA089C320CD97EE00AA0093 /* ProductDetailViewController.swift in Sources */,
 				7FA0895D20CC50F000AA0093 /* AppDelegate.swift in Sources */,
 				7FA089B320CD924800AA0093 /* NotificationManager.swift in Sources */,
+				7F2C91E820CF1E1D00F31CDE /* ProductDetailInformationTableViewCell.swift in Sources */,
 				7FA089B720CD93B000AA0093 /* UIView.swift in Sources */,
 				7FA089AC20CD8F1C00AA0093 /* Navigation.swift in Sources */,
 				7FA089C520CD97FB00AA0093 /* ProductDetailViewModel.swift in Sources */,
 				7FA089B920CD946200AA0093 /* UIBarButtonItem.swift in Sources */,
+				7F2C91E620CEFAF300F31CDE /* ProductDetailTitleTableViewCell.swift in Sources */,
 				7FA089A220CC8B3400AA0093 /* ProductDetail.swift in Sources */,
 				7FA089CE20CDA66400AA0093 /* SearchProductTableViewCell.swift in Sources */,
 				7FA089C120CD97DC00AA0093 /* SearchViewModel.swift in Sources */,
@@ -578,10 +588,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7FA0897220CC50F400AA0093 /* BlueSalesTests.swift in Sources */,
+				7F2C91EE20CF47C500F31CDE /* ProductDetailMock.swift in Sources */,
+				7F2C91EC20CF40A200F31CDE /* ProductMock.swift in Sources */,
 				7FA089A720CD8DF500AA0093 /* ProductDetail.swift in Sources */,
 				7FA089A620CC8CC900AA0093 /* Product.swift in Sources */,
 				7FA089A420CC8C3800AA0093 /* ProductTests.swift in Sources */,
+				7F2C91EA20CF301700F31CDE /* ProductDetailTests.swift in Sources */,
 				7FA089A520CC8CC600AA0093 /* Page.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -661,7 +673,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -715,7 +727,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -731,14 +743,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = BlueSales/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = info.santiagobustamante.BlueSales;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -749,14 +758,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = BlueSales/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = info.santiagobustamante.BlueSales;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -768,11 +774,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = BlueSalesTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = info.santiagobustamante.BlueSalesTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -789,11 +791,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = BlueSalesTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = info.santiagobustamante.BlueSalesTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -809,11 +807,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = BlueSalesUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = info.santiagobustamante.BlueSalesUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -829,11 +823,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = BlueSalesUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = info.santiagobustamante.BlueSalesUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

@@ -87,6 +87,10 @@ class ProductDetail: Mappable {
     var specificationSummary = [ProductSpecificationSummary]()
     var nextDayDelivery = false
     var recommendedAccessories = [Int64]()
+    var reviews = [ProductReview]()
+    var reviewAverage = 0.0
+    var reviewCount = 0
+    
     
     required init?(map: Map){ }
     
@@ -105,6 +109,9 @@ class ProductDetail: Mappable {
         specificationSummary    <- map["specificationSummary"]
         nextDayDelivery         <- map["nextDayDelivery"]
         recommendedAccessories  <- map["recommendedAccessories"]
+        reviews                 <- map["reviewInformation.reviews"]
+        reviewAverage           <- map["reviewInformation.reviewSummary.reviewAverage"]
+        reviewCount             <- map["reviewInformation.reviewSummary.reviewCount"]
     }
     
     class func forProduct(_ product: Product, complete: @escaping (ProductDetail?, Error?)->()) {
@@ -113,7 +120,7 @@ class ProductDetail: Mappable {
         
         Alamofire.request(url)
             .validate()
-            .responseObject{ (response: DataResponse<ProductDetail>) in
+            .responseObject(keyPath: "product"){ (response: DataResponse<ProductDetail>) in
             if let detail = response.value {
                 complete(detail, nil)
             } else {

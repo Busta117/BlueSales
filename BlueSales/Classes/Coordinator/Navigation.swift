@@ -23,4 +23,15 @@ extension SearchViewController {
 }
 
 
+extension ProductDetailViewController {
+    class func launch(product: Product) -> ProductDetailViewController {
+        return ProductDetailViewController.launch(viewModel: ProductDetailViewModel(product: product))
+    }
+    class func launch(viewModel: ProductDetailViewModel) -> ProductDetailViewController {
+        let vc = UIStoryboard(name: "Product", bundle: nil).instantiateViewController(withIdentifier: "ProductDetailViewController") as! ProductDetailViewController
+        vc.viewModel = viewModel
+        return vc
+    }
+}
+
 

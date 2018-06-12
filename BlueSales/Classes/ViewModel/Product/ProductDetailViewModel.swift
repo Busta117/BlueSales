@@ -7,7 +7,19 @@
 //
 
 import UIKit
+import RxSwift
 
-class ProductDetailViewModel: NSObject {
+struct ProductDetailViewModel {
 
+    var product: Product
+    let detail = Variable<ProductDetail?>(nil)
+    let error = Variable<Error?>(nil)
+    
+    func load() {
+        product.detail { (detail, error) in
+            self.detail.value = detail
+            self.error.value = error
+        }
+    }
+    
 }

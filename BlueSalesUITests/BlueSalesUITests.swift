@@ -28,9 +28,38 @@ class BlueSalesUITests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testSearchResults() {
+        
+        let app = XCUIApplication()
+        app.searchFields["Search Product"].tap()
+        app.searchFields["Search Product"].typeText("Apple\n")
+        let table = app.tables.containing(.table, identifier: "tableView")
+        var firstCell = table.cells.element(boundBy: 0)
+        
+        let myPredicate = NSPredicate(format: "exists == true")
+        let myExpectation = expectation(for: myPredicate, evaluatedWith: firstCell, handler: nil)
+        XCTWaiter(delegate: self).wait(for: [myExpectation], timeout: 3)
+        
+        XCTAssertTrue(table.cells.count > 0)
+        firstCell = table.cells.element(boundBy: 0)
+        firstCell.tap()
+
+    }
+    
+    func testDetailView() {
+        
+        testSearchResults()
+        
+        let app = XCUIApplication()
+        
+        let title = app.navigationBars["Detail"]
+        
+        let myPredicate = NSPredicate(format: "exists == true")
+        let myExpectation = expectation(for: myPredicate, evaluatedWith: title , handler: nil)
+        XCTWaiter(delegate: self).wait(for: [myExpectation], timeout: 3)
+        
+        XCTAssertTrue(title.exists, "Should be on the detail screen")
+        
     }
     
 }

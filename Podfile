@@ -7,12 +7,12 @@ target 'BlueSales' do
 
 
   pod 'SVProgressHUD'
-  pod 'DateToolsSwift'
   pod 'Alamofire'
   pod 'RxSwift'
   pod 'ObjectMapper'
   pod 'AlamofireObjectMapper'
   pod 'AlamofireImage'
+  pod 'SwiftyMarkdown'
 
   target 'BlueSalesTests' do
     inherit! :search_paths
